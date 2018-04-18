@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-import { InputComponent } from '../input/input.component';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -14,5 +12,15 @@ export class ChildComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Input('valueToPass')
+  count: number = 0;
+
+  increment() {
+    this.valueToPass++;
+  }
+
+  decrement() {
+    this.valueToPass--;
+  }
 
 }

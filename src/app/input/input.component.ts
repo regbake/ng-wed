@@ -13,5 +13,6 @@ export class InputComponent implements OnInit {
   }
 
   name = 'reggie';
+  initialCount: number = 10;
 
 }
