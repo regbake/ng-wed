@@ -23,4 +23,8 @@ export class ChildComponent implements OnInit {
     this.valueToPass--;
   }
 
+  add() {
+    this.count++;
+  }
+
 }

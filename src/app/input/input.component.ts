@@ -13,6 +13,11 @@ export class InputComponent implements OnInit {
   }
 
   name = 'reggie';
+
   initialCount: number = 10;
+
+  sub() {
+    this.initialCount--;
+  }
 
 }
