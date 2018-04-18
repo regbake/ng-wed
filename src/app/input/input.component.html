@@ -14,9 +14,11 @@
   <li>Send that data to another component</li>
 </ul>
 
-<app-child  [valueToPass]="initialCount"></app-child>
+<app-child  [count]="myCount"
+  (change)="countChange($event)">
+</app-child>
 
-<div (click)="sub()">
-  <h1>Click Me!</h1>
+<div>
+  <h1>{{ myCount }}</h1>
   <p>from parent</p>
 </div>
